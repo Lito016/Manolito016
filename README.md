@@ -32,7 +32,7 @@
 
 <!-- Daily Rotating Tech Quote (auto-updated by GitHub Action) -->
 <div align="center">
-  <p><em><!-- QUOTE:START -->First, solve the problem. Then, write the code. — John Johnson<!-- QUOTE:END --></em></p>
+  <p><em><!-- QUOTE:START -->An API that isn't trivial to use is, by definition, useless. — Joe Gregorio<!-- QUOTE:END --></em></p>
 </div>
 
 ---
