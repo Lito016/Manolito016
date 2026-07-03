@@ -1,0 +1,35 @@
+name: Update Blog Posts Feed
+
+on:
+  schedule:
+    - cron: "0 8 * * *"  # Runs daily at 8 AM UTC
+  workflow_dispatch:
+
+jobs:
+  update-blog-feed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch latest blog posts
+        uses: gautamkrishnar/blog-post-workflow@master
+        with:
+          # Replace this URL with your actual blog RSS feed
+          # Supports: dev.to, medium.com, hashnode, personal blog RSS, etc.
+          # Example: https://dev.to/feed/manolito016
+          feed_names: "blog"
+          custom_tags: "blog/urls"
+          max_post_count: 5
+          tag_post_pre_newline: true
+          readme_path: README.md
+          comment_tag_name: BLOG-POST-FEED
+          commit_message: "chore: update blog posts"
+          # Disable until a real feed URL is configured
+          disable_html_encoding: true
+          # Set your blog RSS feed URL here:
+          # feed_list: "https://dev.to/feed/manolito016"
+          feed_list: ""
+          disable_sort: false

@@ -1,0 +1,41 @@
+name: Generate 3D Contribution Graph
+
+on:
+  schedule:
+    - cron: "0 3 * * *"  # Runs daily at 3 AM UTC
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate 3D contribution graph
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: |
+            {
+              "type": "normal",
+              "fileName": "profile-3d-contrib/profile-green-animate.svg",
+              "settings": {
+                "githubColor": "green",
+                "animate": true
+              }
+            }
+
+      - name: Commit and push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -d profile-3d-contrib/
+          git diff --staged --quiet || git commit -m "chore: update 3D contribution graph"
+          git push
