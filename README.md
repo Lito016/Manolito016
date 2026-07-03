@@ -149,8 +149,8 @@ Responsive design · Modern UI/UX · Accessibility compliant
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Manolito016&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=3B82F6&icon_color=3B82F6" width="49%" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Manolito016&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=3B82F6" width="49%" />
+<img src="https://github-stats-profile.vercel.app/api?username=Manolito016&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=3B82F6&icon_color=3B82F6" width="49%" alt="GitHub Stats" />
+<img src="https://github-stats-profile.vercel.app/api/top-langs/?username=Manolito016&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=3B82F6" width="49%" alt="Top Languages" />
 
 <br>
 
