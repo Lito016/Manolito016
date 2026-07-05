@@ -52,6 +52,7 @@ I'm a developer focused on building AI-integrated web applications and full-stac
 
 </div>
 
+- **[AI SaaS Landing](https://ai-saas-landing.pages.dev)** — AI-powered SaaS landing page. [Live Demo](https://ai-saas-landing.pages.dev)
 - **[OJT Journal Platform](https://github.com/Manolito016/OJT_JOURNAL)** — Digital journaling for students with AI-powered insights and progress tracking. `JavaScript` `PHP` `AI` `MySQL`
 - **[DishManager](https://github.com/Manolito016/DishManager)** — Smart kitchen management for recipes, ingredients, and meal planning. `JavaScript` `Web`
 - **[Portfolio Website](https://github.com/Manolito016/Portfolio)** — Modern responsive portfolio with glassmorphism design. [Live Demo](https://manolito016.github.io/Portfolio/) `HTML` `CSS` `JavaScript`
